@@ -1,0 +1,314 @@
+2016-06-07 00:37:52.008  INFO 10231 --- [main] com.atul.merchant.MerchantServiceTest    : Starting MerchantServiceTest on mail with PID 10231 (/home/atul/Downloads/retail-rest/retail-rest/target/test-classes started by atul in /home/atul/Downloads/retail-rest/retail-rest)
+2016-06-07 00:37:52.009  INFO 10231 --- [main] com.atul.merchant.MerchantServiceTest    : No active profile set, falling back to default profiles: default
+2016-06-07 00:37:52.273  INFO 10231 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@66d3eec0: startup date [Tue Jun 07 00:37:52 PDT 2016]; root of context hierarchy
+2016-06-07 00:37:53.465  INFO 10231 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2016-06-07 00:37:54.375  INFO 10231 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1eae4887] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-07 00:37:54.433  INFO 10231 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2016-06-07 00:37:54.476  INFO 10231 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [class org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$6fda1bad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-07 00:37:54.735  WARN 10231 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:37:54.770  WARN 10231 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:37:56.088  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/{productId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.getProduct(java.lang.String)
+2016-06-07 00:37:56.089  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.saveProduct(com.atul.retail.domain.product.Product)
+2016-06-07 00:37:56.090  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/{productId}],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.updateProduct(com.atul.retail.domain.product.Product)
+2016-06-07 00:37:56.090  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.getProducts()
+2016-06-07 00:37:56.091  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/{merchantId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.merchant.rest.MerchantRestController.getProduct(java.lang.String)
+2016-06-07 00:37:56.092  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-06-07 00:37:56.095  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-06-07 00:37:56.096  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-06-07 00:37:56.096  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-06-07 00:37:56.101  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-06-07 00:37:56.102  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-06-07 00:37:56.352  WARN 10231 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:37:56.555  INFO 10231 --- [main] org.apache.cxf.endpoint.ServerImpl       : Setting the server's publish address to be /
+2016-06-07 00:37:56.913  INFO 10231 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@66d3eec0: startup date [Tue Jun 07 00:37:52 PDT 2016]; root of context hierarchy
+2016-06-07 00:37:56.994  INFO 10231 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:37:56.994  INFO 10231 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:37:57.058  INFO 10231 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:37:57.130  WARN 10231 --- [main] o.s.b.a.t.ThymeleafAutoConfiguration     : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2016-06-07 00:37:57.718  INFO 10231 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-06-07 00:37:57.748  INFO 10231 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2016-06-07 00:37:57.763  INFO 10231 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-06-07 00:37:57.965  INFO 10231 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getProductUsingGET_1
+2016-06-07 00:37:58.064  INFO 10231 --- [main] com.atul.merchant.MerchantServiceTest    : Started MerchantServiceTest in 6.322 seconds (JVM running for 6.983)
+2016-06-07 00:37:58.529 ERROR 10231 --- [main] com.atul.merchant.MerchantServiceTest    : catching
+
+com.atul.retail.exceptions.ResourceNotFoundException: The requested resource does not exist.
+	at com.atul.merchant.dao.impl.MerchantDaoImpl.getMerchantDetails(MerchantDaoImpl.java:35)
+	at com.atul.merchant.dao.impl.MerchantDaoImpl$$FastClassBySpringCGLIB$$9e01fe67.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.atul.merchant.dao.impl.MerchantDaoImpl$$EnhancerBySpringCGLIB$$eab7cb12.getMerchantDetails(<generated>)
+	at com.atul.merchant.service.impl.MerchantServiceImpl.getMerchantDetails(MerchantServiceImpl.java:21)
+	at com.atul.merchant.MerchantServiceTest.testFindMerchantDetails(MerchantServiceTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2016-06-07 00:37:58.530  INFO 10231 --- [main] com.atul.merchant.MerchantServiceTest    : Printing Merchant null 
+2016-06-07 00:37:58.606  INFO 10231 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.atul.retail.ProductServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-06-07 00:37:58.613  INFO 10231 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener, org.springframework.boot.test.autoconfigure.json.JsonTesterInitializationTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-06-07 00:37:58.615  INFO 10231 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5b0e9e0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@54234569, org.springframework.boot.test.autoconfigure.AutoConfigureReportTestExecutionListener@21ea1d9d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@19f497aa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36a58466, org.springframework.test.context.transaction.TransactionalTestExecutionListener@78e387d6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9147ba2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3460e4ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2efcc0b3, org.springframework.boot.test.autoconfigure.json.JsonTesterInitializationTestExecutionListener@4a453f8d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@60a6840c]
+2016-06-07 00:37:58.628  INFO 10231 --- [main] com.atul.retail.ProductServiceTest       : Coming in setup before class
+2016-06-07 00:37:58.657  INFO 10231 --- [main] c.a.r.service.impl.ProductServiceImpl    : Going to get product id5754fe043004f645d6e95db7
+2016-06-07 00:37:58.718 ERROR 10231 --- [main] c.a.r.service.impl.ProductServiceImpl    : Resource not found caught:
+2016-06-07 00:37:58.720 ERROR 10231 --- [main] com.atul.retail.ProductServiceTest       : catching
+
+com.atul.retail.exceptions.ResourceNotFoundException: The requested resource does not exist.
+	at com.atul.retail.dao.impl.ProductDaoImpl.findById(ProductDaoImpl.java:50)
+	at com.atul.retail.dao.impl.ProductDaoImpl$$FastClassBySpringCGLIB$$94ae94c1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.atul.retail.dao.impl.ProductDaoImpl$$EnhancerBySpringCGLIB$$60f95660.findById(<generated>)
+	at com.atul.retail.service.impl.ProductServiceImpl.findById(ProductServiceImpl.java:47)
+	at com.atul.retail.service.impl.ProductServiceImpl$$FastClassBySpringCGLIB$$31a9a307.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:74)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:263)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:154)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:101)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.atul.retail.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$cfdb5cc0.findById(<generated>)
+	at com.atul.retail.ProductServiceTest.testFindProductById(ProductServiceTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2016-06-07 00:37:58.817  INFO 10231 --- [main] com.atul.retail.ProductServiceTest       : Printing all the Documents [Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@5e6522a6, pricing=null}] 
+2016-06-07 00:37:58.834  INFO 10231 --- [main] com.atul.retail.ProductServiceTest       : Got the list size after query by criteria 1
+2016-06-07 00:37:58.835  INFO 10231 --- [main] com.atul.retail.ProductServiceTest       : Count is:1
+2016-06-07 00:37:58.835  INFO 10231 --- [main] com.atul.retail.ProductServiceTest       : Current list size is:1
+2016-06-07 00:37:58.839  INFO 10231 --- [main] c.a.r.service.impl.ProductServiceImpl    : Going to get product id5754fe043004f645d6e95db7
+2016-06-07 00:37:58.841 ERROR 10231 --- [main] c.a.r.service.impl.ProductServiceImpl    : Resource not found caught:
+2016-06-07 00:37:58.842 ERROR 10231 --- [main] com.atul.retail.ProductServiceTest       : catching
+
+com.atul.retail.exceptions.ResourceNotFoundException: The requested resource does not exist.
+	at com.atul.retail.dao.impl.ProductDaoImpl.findById(ProductDaoImpl.java:50)
+	at com.atul.retail.dao.impl.ProductDaoImpl$$FastClassBySpringCGLIB$$94ae94c1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.atul.retail.dao.impl.ProductDaoImpl$$EnhancerBySpringCGLIB$$60f95660.findById(<generated>)
+	at com.atul.retail.service.impl.ProductServiceImpl.findById(ProductServiceImpl.java:47)
+	at com.atul.retail.service.impl.ProductServiceImpl$$FastClassBySpringCGLIB$$31a9a307.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:74)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:263)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:154)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:101)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at com.atul.retail.service.impl.ProductServiceImpl$$EnhancerBySpringCGLIB$$cfdb5cc0.findById(<generated>)
+	at com.atul.retail.ProductServiceTest.testFindProductById_RestClientException(ProductServiceTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2016-06-07 00:37:58.853  INFO 10231 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@66d3eec0: startup date [Tue Jun 07 00:37:52 PDT 2016]; root of context hierarchy
+2016-06-07 00:39:09.816  INFO 10335 --- [main] c.a.r.configs.RetailApplicationConfig    : Starting RetailApplicationConfig on mail with PID 10335 (/home/atul/Downloads/retail-rest/retail-rest/target/classes started by atul in /home/atul/Downloads/retail-rest/retail-rest)
+2016-06-07 00:39:09.821  INFO 10335 --- [main] c.a.r.configs.RetailApplicationConfig    : No active profile set, falling back to default profiles: default
+2016-06-07 00:39:10.166  INFO 10335 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc327c9: startup date [Tue Jun 07 00:39:10 PDT 2016]; root of context hierarchy
+2016-06-07 00:39:11.410  INFO 10335 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2016-06-07 00:39:12.131  INFO 10335 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$852fe43e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-07 00:39:12.177  INFO 10335 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2016-06-07 00:39:12.206  INFO 10335 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [class org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$d65bb764] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-07 00:39:12.582  INFO 10335 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-06-07 00:39:12.593  INFO 10335 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-06-07 00:39:12.595  INFO 10335 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2016-06-07 00:39:12.700  INFO 10335 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-06-07 00:39:12.700  INFO 10335 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2539 ms
+2016-06-07 00:39:13.151  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'CXFServlet' to [/cxf/*]
+2016-06-07 00:39:13.155  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-06-07 00:39:13.156  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2016-06-07 00:39:13.195  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-06-07 00:39:13.196  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-06-07 00:39:13.196  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-06-07 00:39:13.197  INFO 10335 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-06-07 00:39:13.402  WARN 10335 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:39:13.428  WARN 10335 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:39:14.185  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.saveProduct(com.atul.retail.domain.product.Product)
+2016-06-07 00:39:14.186  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/{productId}],methods=[PUT],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.updateProduct(com.atul.retail.domain.product.Product)
+2016-06-07 00:39:14.187  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products/{productId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.getProduct(java.lang.String)
+2016-06-07 00:39:14.187  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/products],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.retail.rest.RetailRestController.getProducts()
+2016-06-07 00:39:14.188  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/{merchantId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity com.atul.merchant.rest.MerchantRestController.getProduct(java.lang.String)
+2016-06-07 00:39:14.189  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-06-07 00:39:14.192  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-06-07 00:39:14.193  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-06-07 00:39:14.194  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-06-07 00:39:14.198  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-06-07 00:39:14.199  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-06-07 00:39:14.430  WARN 10335 --- [main] o.s.d.m.core.convert.CustomConversions   : Registering converter from class java.lang.Number to class java.lang.Number as writing converter although it doesn't convert to a Mongo supported type! You might wanna check you annotation setup at the converter implementation.
+2016-06-07 00:39:14.640  INFO 10335 --- [main] org.apache.cxf.endpoint.ServerImpl       : Setting the server's publish address to be /
+2016-06-07 00:39:14.773  INFO 10335 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc327c9: startup date [Tue Jun 07 00:39:10 PDT 2016]; root of context hierarchy
+2016-06-07 00:39:14.839  INFO 10335 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:39:14.839  INFO 10335 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:39:14.891  INFO 10335 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-06-07 00:39:14.932  WARN 10335 --- [main] o.s.b.a.t.ThymeleafAutoConfiguration     : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2016-06-07 00:39:15.409  INFO 10335 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-06-07 00:39:15.424  INFO 10335 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-06-07 00:39:15.447  INFO 10335 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2016-06-07 00:39:15.459  INFO 10335 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-06-07 00:39:15.967  INFO 10335 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getProductUsingGET_1
+2016-06-07 00:39:16.111  INFO 10335 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-06-07 00:39:16.117  INFO 10335 --- [main] c.a.r.configs.RetailApplicationConfig    : Started RetailApplicationConfig in 6.632 seconds (JVM running for 9.987)
+2016-06-07 00:39:41.583  INFO 10335 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-06-07 00:39:41.585  INFO 10335 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-06-07 00:39:41.605  INFO 10335 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2016-06-07 00:40:05.645  INFO 10335 --- [http-nio-8080-exec-10] c.a.m.rest.MerchantRestController        : Going to fetch the Merchant Details for merchant Id 575679d61320aa21049257be 
+2016-06-07 00:40:05.707  INFO 10335 --- [http-nio-8080-exec-10] c.a.m.rest.MerchantRestController        : Merchant 
+Merchant{merchantId=575679d61320aa21049257be, merchantName='MyRetail Merchant 3', merchantAddress=
+Address{street='null', apartment='Springhouse', zip=94588, city='Pleasanton', Country='US', countryCode='null'}, productId='1234567'} 
+2016-06-07 00:40:27.961  INFO 10335 --- [http-nio-8080-exec-1] c.a.m.rest.MerchantRestController        : Going to fetch the Merchant Details for merchant Id 575679d61320aa21049257b 
+2016-06-07 00:40:58.710  INFO 10335 --- [http-nio-8080-exec-2] c.atul.retail.rest.RetailRestController  : Coming here in getProducts()
+2016-06-07 00:40:58.835  INFO 10335 --- [http-nio-8080-exec-2] c.atul.retail.rest.RetailRestController  : Products are :[Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@4ba116ed, pricing=null}] 
+2016-06-07 00:40:58.835  INFO 10335 --- [http-nio-8080-exec-2] c.atul.retail.rest.RetailRestController  : Products are [Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@4ba116ed, pricing=null}]
+2016-06-07 00:42:05.659  INFO 10335 --- [http-nio-8080-exec-3] c.atul.retail.rest.RetailRestController  : Coming into getProduct 575679d61320aa21049257bf 
+2016-06-07 00:42:05.669  INFO 10335 --- [http-nio-8080-exec-3] c.a.r.service.impl.ProductServiceImpl    : Going to get product id575679d61320aa21049257bf
+2016-06-07 00:42:05.672  INFO 10335 --- [http-nio-8080-exec-3] c.atul.retail.rest.RetailRestController  : Product Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@2ac1530a, pricing=null} 
+2016-06-07 00:42:24.529  INFO 10335 --- [http-nio-8080-exec-4] c.atul.retail.rest.RetailRestController  : Coming into getProduct 575679d61320aa21049257b 
+2016-06-07 00:42:24.529  INFO 10335 --- [http-nio-8080-exec-4] c.a.r.service.impl.ProductServiceImpl    : Going to get product id575679d61320aa21049257b
+2016-06-07 00:42:24.530 ERROR 10335 --- [http-nio-8080-exec-4] c.a.r.service.impl.ProductServiceImpl    : Resource not found caught:
+2016-06-07 00:42:46.776  INFO 10335 --- [http-nio-8080-exec-9] c.atul.retail.rest.RetailRestController  : Coming into getProduct 575679d61320aa21049257bf 
+2016-06-07 00:42:46.776  INFO 10335 --- [http-nio-8080-exec-9] c.a.r.service.impl.ProductServiceImpl    : Going to get product id575679d61320aa21049257bf
+2016-06-07 00:42:46.778  INFO 10335 --- [http-nio-8080-exec-9] c.atul.retail.rest.RetailRestController  : Product Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@3afd97f7, pricing=null} 
+2016-06-07 00:43:42.726  WARN 10335 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Could not read document: Unexpected character ('d' (code 100)): was expecting comma to separate OBJECT entries
+ at [Source: java.io.PushbackInputStream@657645b8; line: 7, column: 24]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('d' (code 100)): was expecting comma to separate OBJECT entries
+ at [Source: java.io.PushbackInputStream@657645b8; line: 7, column: 24]
+2016-06-07 00:44:28.393  WARN 10335 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Could not read document: Can not deserialize instance of java.lang.String[] out of VALUE_STRING token
+ at [Source: java.io.PushbackInputStream@7fc152ec; line: 24, column: 11] (through reference chain: com.atul.retail.domain.product.Product["tags"]); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String[] out of VALUE_STRING token
+ at [Source: java.io.PushbackInputStream@7fc152ec; line: 24, column: 11] (through reference chain: com.atul.retail.domain.product.Product["tags"])
+2016-06-07 00:44:58.422  INFO 10335 --- [http-nio-8080-exec-8] c.atul.retail.rest.RetailRestController  : Coming here in updateProduct() Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='null', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@55b6ebf8, pricing=null} 
+2016-06-07 00:44:58.514  INFO 10335 --- [http-nio-8080-exec-8] c.atul.retail.rest.RetailRestController  : saved data successfully
+2016-06-07 00:45:35.199  INFO 10335 --- [http-nio-8080-exec-6] c.atul.retail.rest.RetailRestController  : Coming into getProduct 575679d61320aa21049257bf 
+2016-06-07 00:45:35.199  INFO 10335 --- [http-nio-8080-exec-6] c.a.r.service.impl.ProductServiceImpl    : Going to get product id575679d61320aa21049257bf
+2016-06-07 00:45:35.224  INFO 10335 --- [http-nio-8080-exec-10] c.a.m.rest.MerchantRestController        : Going to fetch the Merchant Details for merchant Id 575679d61320aa21049257be 
+2016-06-07 00:45:35.225  INFO 10335 --- [http-nio-8080-exec-10] c.a.m.rest.MerchantRestController        : Merchant 
+Merchant{merchantId=575679d61320aa21049257be, merchantName='MyRetail Merchant 3', merchantAddress=
+Address{street='null', apartment='Springhouse', zip=94588, city='Pleasanton', Country='US', countryCode='null'}, productId='1234567'} 
+2016-06-07 00:45:35.236  INFO 10335 --- [http-nio-8080-exec-6] c.atul.retail.rest.RetailRestController  : Product Product{, productId=575679d61320aa21049257bf, displayName='Product Display Name1', merchant='
+Merchant{merchantId=575679d61320aa21049257be, merchantName='MyRetail Merchant 3', merchantAddress=
+Address{street='null', apartment='Springhouse', zip=94588, city='Pleasanton', Country='US', countryCode='null'}, productId='1234567'}', category='
+Category{, categoryId=1, categoryName=null, description='New Category'}', details=
+Details{imageUrl='http://xyzabc.com/image1.png', description='This is image1 description'}, shipping=com.atul.retail.domain.product.Shipping@2f9cab86, pricing=null} 
+2016-06-07 00:47:52.454  WARN 10335 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Could not read document: Can not deserialize instance of org.joda.time.DateTime out of START_OBJECT token
+ at [Source: java.io.PushbackInputStream@27bdb9f0; line: 20, column: 19] (through reference chain: com.atul.retail.domain.product.Product["lastModified"]); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of org.joda.time.DateTime out of START_OBJECT token
+ at [Source: java.io.PushbackInputStream@27bdb9f0; line: 20, column: 19] (through reference chain: com.atul.retail.domain.product.Product["lastModified"])
+2016-06-07 00:48:13.104  INFO 10335 --- [http-nio-8080-exec-3] c.atul.retail.rest.RetailRestController  : Coming here in saveProduct() Product{, productId=string, displayName='string', merchant='null', category='
+Category{, categoryId=0, categoryName=string, description='string'}', details=
+Details{imageUrl='string', description='string'}, shipping=null, pricing=null} 
+2016-06-07 00:48:13.107  INFO 10335 --- [http-nio-8080-exec-3] c.atul.retail.rest.RetailRestController  : saved data successfully
+2016-06-07 01:12:01.242  INFO 10335 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc327c9: startup date [Tue Jun 07 00:39:10 PDT 2016]; root of context hierarchy
+2016-06-07 01:12:01.252  INFO 10335 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

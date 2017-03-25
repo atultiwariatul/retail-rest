@@ -1,0 +1,51 @@
+<configuration scan="true" scanPeriod="30 seconds">
+    <!--<included>-->
+        <!--<property name="APP_NAME" value="RetailProcessor"/>-->
+        <!--<property name="PATTERN"-->
+                  <!--value="%class{0}.%method:%L - %m%n"/>-->
+
+        <!--<appender name="FileAppender"-->
+                  <!--class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+            <!--<file>retail.log</file>-->
+            <!--<append>true</append>-->
+            <!--<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">-->
+                <!--<fileNamePattern>retail.log.zip-->
+                <!--</fileNamePattern>-->
+                <!--<maxIndex>10</maxIndex>-->
+            <!--</rollingPolicy>-->
+            <!--<triggeringPolicy-->
+                    <!--class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
+                <!--<maxFileSize>5MB</maxFileSize>-->
+            <!--</triggeringPolicy>-->
+            <!--<encoder>-->
+                <!--<pattern>${PATTERN}</pattern>-->
+            <!--</encoder>-->
+        <!--</appender>-->
+
+        <!--<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+            <!--<encoder>-->
+                <!--<pattern>${PATTERN}</pattern>-->
+            <!--</encoder>-->
+        <!--</appender>-->
+
+        <!--<logger name="org.springframework" level="WARN" additivity="true"/>-->
+        <!--<root level="DEBUG">-->
+            <!--<appender-ref ref="STDOUT"/>-->
+            <!--<appender-ref ref="FileAppender"/>-->
+        <!--</root>-->
+    <!--</included>-->
+
+
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+    <!--<property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"/>-->
+    <!--<include resource="org/springframework/boot/logging/logback/file-appender.xml" />-->
+    <!--&lt;!&ndash;<include resource="org.springframework.boot.logging.logback.ColorConverter"&ndash;&gt;-->
+    <!--<root level="INFO">-->
+        <!--<appender-ref ref="FILE" />-->
+    <!--</root>-->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
+
